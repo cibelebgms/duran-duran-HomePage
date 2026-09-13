@@ -181,3 +181,29 @@ body {
 .social-links a:hover {
   color: #e94560;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner img {
+    height: 220px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .album-list {
+    grid-template-columns: 1fr;
+  }
+}
