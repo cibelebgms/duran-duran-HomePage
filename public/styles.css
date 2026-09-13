@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #1a1a2e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.site-header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.main-nav ul li a:hover {
+  color: #e94560;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner .banner-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 24px 32px;
+  width: 100%;
+}
+
+.banner-text h1 {
+  margin-bottom: 8px;
+}
+
+/* Álbuns */
+.albums {
+  padding: 48px 32px;
+}
+
+.albums h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.album-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.album-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+/* Contato */
+.contact {
+  background-color: #f4f4f4;
+  padding: 48px 32px;
+}
+
+.contact h2 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #e94560;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #c73650;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 24px 32px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #e94560;
+}
