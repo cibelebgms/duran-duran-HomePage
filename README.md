@@ -24,8 +24,8 @@ A Home Page possui uma versão desktop e uma versão mobile, utilizando CSS puro
 
 ### Desktop
 
-![Versão Desktop](Desktop.D.JPG)
+![Versão Desktop](public/Desktop.D.JPG)
 
 ### Mobile
 
-![Versão Mobile](Mobile.D.JPG)
+![Versão Mobile](public/Mobile.D.JPG)
