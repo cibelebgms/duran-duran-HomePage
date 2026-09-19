@@ -15,6 +15,7 @@ Home Page sobre a banda Duran Duran, desenvolvida utilizando HTML e CSS.
 - HTML5
 - CSS3
 - Git
+- Bootstrap 5
 - GitHub
 - Visual Studio Code
 
@@ -29,3 +30,15 @@ A Home Page possui uma versão desktop e uma versão mobile, utilizando CSS puro
 ### Mobile
 
 ![Versão Mobile](public/Mobile.D.JPG)
+
+## Responsividade com Bootstrap 
+
+Nesta etapa, a Home Page foi refatorada substituindo Media Queries, Flexbox e Grid nativos pelo framework Bootstrap. 
+
+### Desktop 
+
+![Versão Desktop Bootstrap](public/Desktop.Bootstrap.jpg)
+
+### Mobile 
+
+![Versão Mobile Bootstrap](public/Mobile.Bootstrap.jpg)
