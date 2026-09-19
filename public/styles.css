@@ -11,199 +11,91 @@ body {
   line-height: 1.5;
 }
 
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  background-color: #1a1a2e;
-  color: #fff;
-  position: sticky;
-  top: 0;
+/* Cores do tema Duran Duran */
+:root {
+  --cor-fundo-escuro: #1a1a2e;
+  --cor-destaque: #e94560;
 }
 
-.site-header .logo {
+/* Header */
+.topo-pagina {
+  background-color: var(--cor-fundo-escuro);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topo-pagina .brand {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
-}
-
-.main-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-}
-
-.main-nav ul li a {
   color: #fff;
-  text-decoration: none;
+}
+
+.topo-pagina .nav-link {
+  color: #fff;
   font-size: 0.95rem;
 }
 
-.main-nav ul li a:hover {
-  color: #e94560;
+.topo-pagina .nav-link:hover {
+  color: var(--cor-destaque);
 }
 
 /* Banner */
-.banner {
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
+.hero-banner img {
   height: 400px;
   object-fit: cover;
-  display: block;
 }
 
-.banner .banner-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.hero-banner .txt-intro {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  padding: 24px 32px;
-  width: 100%;
 }
 
-.banner-text h1 {
+.hero-banner .txt-intro h1 {
   margin-bottom: 8px;
 }
 
 /* Álbuns */
-.albums {
-  padding: 48px 32px;
+.secao-discos h2 {
+  color: var(--cor-fundo-escuro);
 }
 
-.albums h2 {
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-.album-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.album-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-}
-
-.album-card img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 12px;
-}
-
-.album-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 4px;
+.item-album img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* Contato */
-.contact {
+.form-contato {
   background-color: #f4f4f4;
-  padding: 48px 32px;
 }
 
-.contact h2 {
-  margin-bottom: 16px;
-  text-align: center;
+.form-contato h2 {
+  color: var(--cor-fundo-escuro);
 }
 
-.contact-form {
-  max-width: 480px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.contact-form label {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: inherit;
-}
-
-.contact-form textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.contact-form button {
-  margin-top: 8px;
-  padding: 12px;
-  background-color: #e94560;
+.btn-enviar {
+  background-color: var(--cor-destaque);
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
 }
 
-.contact-form button:hover {
+.btn-enviar:hover {
   background-color: #c73650;
+  color: #fff;
 }
 
 /* Footer */
-.site-footer {
-  background-color: #1a1a2e;
+.rodape {
+  background-color: var(--cor-fundo-escuro);
   color: #fff;
-  text-align: center;
-  padding: 24px 32px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 16px;
-  margin-top: 8px;
-}
-
-.social-links a {
+.rodape a {
   color: #fff;
   text-decoration: none;
 }
 
-.social-links a:hover {
-  color: #e94560;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .main-nav ul {
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .banner img {
-    height: 220px;
-  }
-
-  .banner-text h1 {
-    font-size: 1.4rem;
-  }
-
-  .album-list {
-    grid-template-columns: 1fr;
-  }
+.rodape a:hover {
+  color: var(--cor-destaque);
 }
